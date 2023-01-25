@@ -42,7 +42,7 @@ void main() {
         color.r=pos.x;	
         color.g=pos.y;
 
-        vec2 lightpos=vec2(0.4,0.6);
+        vec3 lightpos=vec3(0.4,0.6,1.);
         float lightdistance=100.;
         float d = distance(vec2(ogx,ogy),vec2(screensize.x*lightpos.x,screensize.y*lightpos.y)); //distance from the light
         if(distance(vec2(ogx,ogy),vec2(screensize.x/2.,screensize.y/2.))<100./zoom){
